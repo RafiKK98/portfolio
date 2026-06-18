@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-accent-blue: #1a56a0;
+}
+
+/* Minimal daisyUI config */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+body {
+  @apply bg-base-100 text-base-content antialiased transition-colors duration-200;
+}
