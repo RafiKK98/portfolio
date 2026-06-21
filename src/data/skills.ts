@@ -35,7 +35,7 @@ export const skills: SkillCategory[] = [
       "Design Systems",
       "Frontend Architecture",
       "Documentation Systems",
-      "AI-Assisted Development (ChatGPT, Claude, Gemini) [cite: 5]",
+      "AI-Assisted Development (ChatGPT, Claude, Gemini)",
     ],
   },
 ];
