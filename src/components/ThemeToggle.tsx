@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
@@ -19,7 +19,10 @@ export default function ThemeToggle() {
       className="btn btn-ghost btn-circle"
       aria-label="Toggle Theme"
     >
-      {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+      <Icon
+        icon={theme === "dark" ? "solar:sun-2-bold" : "solar:moon-outline"}
+        fontSize={24}
+      />
     </button>
   );
 }

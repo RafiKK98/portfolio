@@ -1,4 +1,4 @@
-import { ExternalLink, GitFork } from "lucide-react";
+import { Icon } from "@iconify/react";
 import type { Project } from "../types";
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -22,9 +22,10 @@ export function ProjectCard({ project }: { project: Project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="gap-2 btn btn-sm btn-ghost"
+              className="gap-1 btn btn-sm btn-ghost"
             >
-              <GitFork size={16} /> Code
+              <Icon icon="line-md:github" fontSize={18} />
+              Code
             </a>
           )}
           {project.liveUrl && (
@@ -32,9 +33,9 @@ export function ProjectCard({ project }: { project: Project }) {
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer"
-              className="gap-2 btn btn-sm btn-ghost"
+              className="gap-1 btn btn-sm btn-ghost"
             >
-              <ExternalLink size={16} /> Live
+              <Icon icon="line-md:external-link" fontSize={18} /> Live
             </a>
           )}
         </div>

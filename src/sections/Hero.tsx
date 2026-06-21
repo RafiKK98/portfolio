@@ -1,4 +1,4 @@
-import { GitFork, Mail, MapPin } from "lucide-react";
+import { Icon } from "@iconify/react";
 import { profile } from "../data/profile";
 
 export default function HeroSection() {
@@ -17,7 +17,7 @@ export default function HeroSection() {
           href={`mailto:${profile.email}`}
           className="flex items-center gap-2 hover:text-primary transition-colors"
         >
-          <Mail size={16} /> Email
+          <Icon icon="line-md:email" fontSize={18} /> Email
         </a>
         <a
           href={profile.github}
@@ -25,7 +25,7 @@ export default function HeroSection() {
           rel="noreferrer"
           className="flex items-center gap-2 hover:text-primary transition-colors"
         >
-          <GitFork size={16} /> GitHub
+          <Icon icon="line-md:github" fontSize={18} /> GitHub
         </a>
         <a
           href={profile.linkedin}
@@ -33,10 +33,10 @@ export default function HeroSection() {
           rel="noreferrer"
           className="flex items-center gap-2 hover:text-primary transition-colors"
         >
-          LinkedIn
+          <Icon icon="line-md:linkedin" fontSize={18} /> LinkedIn
         </a>
         <span className="flex items-center gap-2 text-base-content/60">
-          <MapPin size={16} /> {profile.location}
+          <Icon icon="line-md:map-marker" fontSize={18} /> {profile.location}
         </span>
       </div>
     </section>
